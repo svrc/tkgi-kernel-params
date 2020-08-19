@@ -4,12 +4,12 @@ addons:
     jobs:
     - name: kubelet
       release: kubo
-    - name: kube-apiserver
-      release: kubo
   jobs:
-  - name: resolv
+  - name: sysctl
     properties:
-      search: bosh-agent-id
+      sysctl:
+      - net.core.rmem_max=8388608 
+      - net.core.rmem_default=262144
     release: os-conf
   name: resolv-nodes
 releases:
