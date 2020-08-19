@@ -2,9 +2,11 @@
 
 ## What does this do?
 
-This will ensure that TKGI/PKS clusters can have custom kernel parameters set.
+This will ensure that TKGI/PKS clusters can have custom kernel parameters set.  These should survive all upgrades/updates and be applied to all clusters.  
 
 Edit `addon.yml` properties to add your own kernel parameters.
+
+If you want to target specific clusters, you can edit the addon YAML with (https://bosh.io/docs/runtime-config/#placement-rules)[Inclusion or Exclusion rules].
 
 
 ## How do I install it?
