@@ -11,7 +11,7 @@ addons:
       - net.core.rmem_max=8388608 
       - net.core.rmem_default=262144
     release: os-conf
-  name: resolv-nodes
+  name: sysctl-workers
 releases:
 - name: os-conf
   version: 21.0.0+dev.1
